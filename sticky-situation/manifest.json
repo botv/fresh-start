@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Sticky Situation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Close all your tabs and clear your history at the click of a button.",
 
   "icons": {

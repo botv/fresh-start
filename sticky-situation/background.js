@@ -9,5 +9,5 @@ chrome.browserAction.onClicked.addListener(function() {
   chrome.browsingData.removeHistory({
     "since": oneHourAgo
   });
-  chrome.tabs.create({"url": "https://google.com"});
+  chrome.tabs.create({});
 });
