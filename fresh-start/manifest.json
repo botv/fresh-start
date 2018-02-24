@@ -1,7 +1,8 @@
 {
   "manifest_version": 2,
   "name": "Fresh Start",
-  "version": "2.0.0",
+  "short_name": "Restart",
+  "version": "2.0.1",
   "description": "Close all your tabs and clear your history at the click of a button.",
 
   "icons": {
