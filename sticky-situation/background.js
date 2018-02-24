@@ -6,6 +6,8 @@ chrome.browserAction.onClicked.addListener(function() {
   });
   var millisecondsPerHour = 1000 * 60 * 60;
   var oneHourAgo = (new Date()).getTime() - millisecondsPerHour;
-  chrome.browsingData.removeHistory(oneHourAgo);
+  var millisecondsPerWeek = 1000 * 60 * 60 * 24 * 7;
+  var oneWeekAgo = (new Date()).getTime() - millisecondsPerWeek;
+  chrome.browsingData.remove({ "since": oneWeekAgo }, { "history": true });
   chrome.tabs.create({});
 });
