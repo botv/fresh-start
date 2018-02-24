@@ -8,6 +8,6 @@ chrome.browserAction.onClicked.addListener(function() {
   var oneHourAgo = (new Date()).getTime() - millisecondsPerHour;
   var millisecondsPerWeek = 1000 * 60 * 60 * 24 * 7;
   var oneWeekAgo = (new Date()).getTime() - millisecondsPerWeek;
-  chrome.browsingData.remove({ "since": oneWeekAgo }, { "history": true });
+  chrome.browsingData.removeHistory({});
   chrome.tabs.create({});
 });
